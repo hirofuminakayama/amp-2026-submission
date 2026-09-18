@@ -11,3 +11,8 @@ work/
 *.backup-*/
 checkpoint/competition_predictors/esm2_t33_650M_UR50D.pt
 checkpoint/competition_predictors/esm2_t33_650M_UR50D-contact-regression.pt
+
+# Transactional output directories created by generation.
+.generate.tmp-*/
+.generate_broad_spectrum.tmp-*/
+.smoke_output.tmp-*/
