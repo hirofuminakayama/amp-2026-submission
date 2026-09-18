@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "family": "finetune8",
+  "feature_dimension": 320,
+  "unit": "log2_uM",
+  "width": null,
+  "training_parameters": {
+    "epochs": 10,
+    "lr": 0.0001
+  },
+  "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+  "source_weights_sha256": "13e665c4416ea4af515498baf49ca12933f59c60d78941b34d897dca14ed2499",
+  "source_manifest_sha256": "f2234460713375e06a1438cfbfa2777ac0959b6add7ca8afa89381359fb19431",
+  "artifacts_sha256": {
+    "network.pt": "53795004e6d6b48ac67c8b66034b02f7dae63ea552afaea1800824e07c71b18a",
+    "arrays.npz": "5ed4f5e9b01b1f878a25ae0c33f442177237209b4775159d3a3544afa4306460"
+  }
+}

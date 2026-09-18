@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-09-13",
+  "reference_root": "work/mic_prediction/20260913-phase01-a/reference",
+  "sources": [
+    {
+      "path": "mic-qmap-lib.rs",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/pwiden_engine/src/lib.rs",
+      "sha256": "b7e6d933f13cebf289b6b411f818f2908855906f279c5e3fe92b016856a739d2"
+    },
+    {
+      "path": "mic-qmap-global.rs",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/pwiden_engine/src/global_identity.rs",
+      "sha256": "9e0d9fed88b18a1cfe6680999baec43eea85d5193745ef52d31965e9f84d0095"
+    },
+    {
+      "path": "mic-qmap-Cargo.toml",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/Cargo.toml",
+      "sha256": "684c931c1b4db8c75c1deec1e2b918942c915690c75eecf784d3f3626ffd4b80"
+    },
+    {
+      "path": "qmap-Cargo.lock",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/Cargo.lock",
+      "sha256": "76b5194132c9825238e6c10ef90ee82e6d2fc00e2ec1121c00ba48eb13aeaf7a"
+    },
+    {
+      "path": "mic-parasail-aligner.rs",
+      "url": "https://static.crates.io/crates/parasail-rs/parasail-rs-0.9.0.crate#src/aligner/mod.rs",
+      "sha256": "d7050215309491de533c647669735e09d79978ad12eee90f88758886ec662122"
+    },
+    {
+      "path": "mic-dbaasp-card.js",
+      "url": "https://dbaasp.org/js/peptide-card.js?v=4.1.2",
+      "sha256": "aecd1cd5ed334271533901d6b394ec20574bc3e9ea8d0366318d24f76d5b2afc"
+    },
+    {
+      "path": "libparasail-build-pinned.rs",
+      "url": "https://raw.githubusercontent.com/anthol42/libparasail-sys/e9b1043cf6ba459d3e5e440e31df1819a0cce660/build.rs",
+      "sha256": "a56c782015cbba20e4b8c4fc6550dcc5ee9f82aaeb27967382e4907cc40716e0"
+    },
+    {
+      "path": "libparasail-gitmodules",
+      "url": "https://raw.githubusercontent.com/anthol42/libparasail-sys/e9b1043cf6ba459d3e5e440e31df1819a0cce660/.gitmodules",
+      "sha256": "fcdf52047e46d8c1c417ffa4c853ef5a7423e57a03c69e8c0aefa74357251259"
+    },
+    {
+      "path": "native-compare-v2.6.1.json",
+      "url": "https://api.github.com/repos/jeffdaily/parasail/compare/v2.6.1...nsbuitrago:19287822c713a591e4b87a7ab51524850762a555",
+      "sha256": "008c62da2cf15cb7a2e0af181505298168b3234e172454f0fa280400c57d81c2"
+    },
+    {
+      "path": "qmap-binary-mask.rs",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/pwiden_engine/src/binary_mask.rs",
+      "sha256": "4f76817a038ab72e547b05dabe64e461a303a99d46afa3ba73d815165bcd0eba"
+    }
+  ],
+  "native_comparison": "Only src/dispatch_profile.c differs in computation; profile-accepting interface dispatch fix is not used by the no-profile nw_stats_striped_sat entry point.",
+  "qmap_native_revision": "19287822c713a591e4b87a7ab51524850762a555"
+}

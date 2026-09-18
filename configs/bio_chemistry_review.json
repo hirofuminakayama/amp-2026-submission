@@ -1,0 +1,26 @@
+{
+  "observations": "work/competition_bioaccuracy/20260915-followup-e/corrected_endpoint_observations.jsonl",
+  "lineage": "work/mic_prediction/20260913-phase01-a/lineage-final/observations.jsonl",
+  "metadata": "work/competition_bioaccuracy/20260913-a/hc50-metadata",
+  "research_review": "work/competition_bioaccuracy/20260915-chemistry-a/research_sources.json",
+  "rules": [
+    {
+      "paper_id": "pubmed:28761101",
+      "paper": "work/mic_prediction/20260914-papers-a/sources/PMC5537347.xml",
+      "source_ids": ["7163", "7164", "10625", "10626", "10627"],
+      "stereochemistry": "L",
+      "cterminal": null,
+      "locator": "Table 1 and Results, RR4 versus D-RR4",
+      "rationale": "Reported L/free form inferred from explicit L/D sequence-table contrast, selective NH2 marking of D-RR4, and matching database free-terminus metadata. Restricted to these table molecules and assays attributed to this paper."
+    },
+    {
+      "paper_id": "pubmed:37938588",
+      "paper": "work/mic_prediction/20260914-papers-a/sources/PMC10632401.xml",
+      "source_ids": ["21526", "21527", "21528", "21529", "21530", "21531", "21532", "21533", "21534", "21535", "21536", "21537", "21538"],
+      "stereochemistry": "L",
+      "cterminal": "NH2",
+      "locator": "Results pure-compound assays; Methods chemical synthesis, Materials and Solid-phase peptide synthesis",
+      "rationale": "Assay-specific synthetic material uses listed L residues and TentaGel S RAM. C-terminal amidation is inferred from the stated resin and manufacturer chemistry. Cell-free screening is not the material used for these MIC/HC50 assays."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "family": "linear650",
+  "feature_dimension": 1280,
+  "unit": "log2_uM",
+  "width": null,
+  "training_parameters": {
+    "alpha": 100.0
+  },
+  "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+  "source_weights_sha256": "320d96279d0cb560017ae10eb4afdf2a00f49dd3f1ba957b7457e9e72fc4963a",
+  "source_manifest_sha256": "147f1cf9fc34c4fa807624fe48233ad004e74396b5a6a70a8da1164d59205af9",
+  "artifacts_sha256": {
+    "arrays.npz": "de16f66b004a8aef184cec48cd0579056b779c45b4193c29a376717e0dcd7537"
+  }
+}

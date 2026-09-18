@@ -1,0 +1,102 @@
+{
+  "sources": {
+    "baseline": {
+      "path": "work/phase11-clean-0f2f600/full_run_1/work/candidates.csv.gz",
+      "count": 60000,
+      "sha256": "7aff1c7f4a03555bd187ccc764cf51351a31a5d102390b9ed82eb667aca51784"
+    },
+    "ddim": {
+      "path": "work/competition_exploration/20260913-scale/ddim/steps-250-s42/candidates.csv.gz",
+      "count": 120000,
+      "manifest": "work/competition_exploration/20260913-scale/ddim/steps-250-s42/run_manifest.json"
+    },
+    "ddpm": {
+      "path": "work/competition_exploration/20260913-scale/ddpm/steps-1000-s43/candidates.csv.gz",
+      "count": 60000,
+      "manifest": "work/competition_exploration/20260913-scale/ddpm/steps-1000-s43/run_manifest.json"
+    }
+  },
+  "pools": {
+    "baseline": [
+      "baseline"
+    ],
+    "ddim120k": [
+      "ddim"
+    ],
+    "union120k": [
+      "baseline",
+      "ddpm"
+    ],
+    "union240k": [
+      "baseline",
+      "ddpm",
+      "ddim"
+    ]
+  },
+  "baseline": "work/phase11-clean-0f2f600/full_run_1",
+  "prior_selection": "work/competition_exploration/20260912-a/phase2",
+  "refits": "work/competition_exploration/20260912-b/phase3-refits",
+  "model_config": "configs/competition_models.json",
+  "challenge": "data/antibacterial.fasta",
+  "reference": "data/training/training.fasta",
+  "size": 50000,
+  "top_k": 100,
+  "library_variants": [
+    "L2",
+    "mix0.75",
+    "Lref",
+    "lowOOD"
+  ],
+  "rankers": [
+    "B1",
+    "species",
+    "finetune8-w0.75",
+    "finetune8-w0.5",
+    "mlp8-w0.75",
+    "linear8-w0.75",
+    "linear650-w0.75",
+    "physchem-w0.75",
+    "rankmean"
+  ],
+  "constraint_variants": [
+    "current",
+    "challenge80"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "subset_sizes": [
+    1000,
+    2000
+  ],
+  "scenarios": {
+    "equal": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "activity": [
+      0.5,
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "distribution": [
+      0.125,
+      0.125,
+      0.125,
+      0.5,
+      0.125
+    ]
+  },
+  "mixture_fractions": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "claim": "development computational comparison, not independent experimental activity"
+}

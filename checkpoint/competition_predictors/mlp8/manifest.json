@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "family": "mlp8",
+  "feature_dimension": 320,
+  "unit": "log2_uM",
+  "width": 64,
+  "training_parameters": {
+    "epochs": 150,
+    "lr": 0.003,
+    "width": 64
+  },
+  "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+  "source_weights_sha256": "861b36e49b1b1169ac2e4ba683436884a7e8cedff0f00abc5397a8ae09ea0c89",
+  "source_manifest_sha256": "759c420321455ac750509d889dda2d66b9db975a25f6ab09b2d4cba42d884ecd",
+  "artifacts_sha256": {
+    "network.pt": "0cb608c6fb3e4d9036645f6c4d6c1a1ff2628ab12aced358276da9653f6e1c0c",
+    "arrays.npz": "5ed4f5e9b01b1f878a25ae0c33f442177237209b4775159d3a3544afa4306460"
+  }
+}

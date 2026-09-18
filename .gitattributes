@@ -1,0 +1,5 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+apex/APEX_pathogen_models/** filter=lfs diff=lfs merge=lfs -text
+apex/APEX_models.py whitespace=-trailing-space
+experimental/mic.csv whitespace=-trailing-space
+src/ampdiffusion_starter_kit/model.py whitespace=-trailing-space

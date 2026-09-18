@@ -1,0 +1,126 @@
+{
+  "supervised_models": [
+    {
+      "family": "physchem",
+      "train_observations": 5036,
+      "training_parameters": {
+        "alpha": 1.0,
+        "artifact_key": "physchem",
+        "family": "physchem",
+        "id": "physchem-a1"
+      },
+      "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+      "original_refit": "work/competition_exploration/20260912-b/phase3-refits/physchem",
+      "original_manifest_sha256": "0ec81e47a98ca38cb62cb714f7c646c445db3b58d4a345ea9006c0c1f57588a9",
+      "bundle": "checkpoint/competition_predictors/physchem",
+      "bundle_manifest_sha256": "e9a2613c5eba7e46034f59a5f673f992ab31cd13e11d4e554e87c8357059e661",
+      "model_files_sha256": {
+        "arrays.npz": "5e13665d441f46fef56e5eac622fd6584219f6c16a26d9525e5b6c29e5eb196c"
+      },
+      "role": "inference consensus constituent; trained on exact public BATTLE-AMP observations",
+      "chemistry_limitation": "pre-correction refit retained; the subsequent chemical-form exclusion experiment did not replace these weights"
+    },
+    {
+      "family": "linear8",
+      "train_observations": 5036,
+      "training_parameters": {
+        "alpha": 100.0,
+        "artifact_key": "linear8",
+        "family": "linear8",
+        "id": "linear8-a100"
+      },
+      "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+      "original_refit": "work/competition_exploration/20260912-b/phase3-refits/linear8",
+      "original_manifest_sha256": "bf67022c6b0ce12b921a50ec12f327882b1e5a8c0dd6fec22dd4444041792002",
+      "bundle": "checkpoint/competition_predictors/linear8",
+      "bundle_manifest_sha256": "9b6e786344522516d38f8658070350d865c3acb7e56e036fd8a2d09147911c13",
+      "model_files_sha256": {
+        "arrays.npz": "c2646a0ae9c4dee7da64713425202eebe6df85d46fcba5078f0ff38911f8743f"
+      },
+      "role": "inference consensus constituent; trained on exact public BATTLE-AMP observations",
+      "chemistry_limitation": "pre-correction refit retained; the subsequent chemical-form exclusion experiment did not replace these weights"
+    },
+    {
+      "family": "linear650",
+      "train_observations": 5036,
+      "training_parameters": {
+        "alpha": 100.0,
+        "artifact_key": "linear650",
+        "family": "linear650",
+        "id": "linear650-a100"
+      },
+      "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+      "original_refit": "work/competition_exploration/20260912-b/phase3-refits/linear650",
+      "original_manifest_sha256": "147f1cf9fc34c4fa807624fe48233ad004e74396b5a6a70a8da1164d59205af9",
+      "bundle": "checkpoint/competition_predictors/linear650",
+      "bundle_manifest_sha256": "b6fa37aaed231574de9933d79d64c7afa6d23243b2edce6aec5a35a35630f926",
+      "model_files_sha256": {
+        "arrays.npz": "de16f66b004a8aef184cec48cd0579056b779c45b4193c29a376717e0dcd7537"
+      },
+      "role": "inference consensus constituent; trained on exact public BATTLE-AMP observations",
+      "chemistry_limitation": "pre-correction refit retained; the subsequent chemical-form exclusion experiment did not replace these weights"
+    },
+    {
+      "family": "mlp8",
+      "train_observations": 5036,
+      "training_parameters": {
+        "artifact_key": "mlp8",
+        "epochs": 150,
+        "family": "mlp8",
+        "id": "mlp8-w64-r1",
+        "lr": 0.003,
+        "width": 64
+      },
+      "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+      "original_refit": "work/competition_exploration/20260912-b/phase3-refits/mlp8",
+      "original_manifest_sha256": "759c420321455ac750509d889dda2d66b9db975a25f6ab09b2d4cba42d884ecd",
+      "bundle": "checkpoint/competition_predictors/mlp8",
+      "bundle_manifest_sha256": "fd84baa145ed57b6febf8f7352fe51717962af75706b205658e1716fb4a3372b",
+      "model_files_sha256": {
+        "network.pt": "0cb608c6fb3e4d9036645f6c4d6c1a1ff2628ab12aced358276da9653f6e1c0c",
+        "arrays.npz": "5ed4f5e9b01b1f878a25ae0c33f442177237209b4775159d3a3544afa4306460"
+      },
+      "role": "inference consensus constituent; trained on exact public BATTLE-AMP observations",
+      "chemistry_limitation": "pre-correction refit retained; the subsequent chemical-form exclusion experiment did not replace these weights"
+    },
+    {
+      "family": "finetune8",
+      "train_observations": 5036,
+      "training_parameters": {
+        "artifact_key": "finetune8",
+        "epochs": 10,
+        "family": "finetune8",
+        "id": "finetune8-e10-r1",
+        "lr": 0.0001
+      },
+      "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+      "original_refit": "work/competition_exploration/20260912-b/phase3-refits/finetune8",
+      "original_manifest_sha256": "f2234460713375e06a1438cfbfa2777ac0959b6add7ca8afa89381359fb19431",
+      "bundle": "checkpoint/competition_predictors/finetune8",
+      "bundle_manifest_sha256": "02fe4efc9323ea6d6470851b123a9deb0dc8ce2ab46d52f73ef7d8eb9f8716df",
+      "model_files_sha256": {
+        "network.pt": "53795004e6d6b48ac67c8b66034b02f7dae63ea552afaea1800824e07c71b18a",
+        "arrays.npz": "5ed4f5e9b01b1f878a25ae0c33f442177237209b4775159d3a3544afa4306460"
+      },
+      "role": "inference consensus constituent; trained on exact public BATTLE-AMP observations",
+      "chemistry_limitation": "pre-correction refit retained; the subsequent chemical-form exclusion experiment did not replace these weights"
+    }
+  ],
+  "unique_training_observation_count": 5036,
+  "observation_ids_file": "training_observation_ids.txt",
+  "public_source_revision": "BATTLE-AMP 72e26f705badbd83ddcd347ba96cff16ae4278f6; underlying DBAASP sources retain their own terms",
+  "source_url": "https://github.com/szczurek-lab/battleamp-snakemake/tree/72e26f705badbd83ddcd347ba96cff16ae4278f6",
+  "data_owner": "DATA_SOURCES.md",
+  "runtime_labels_required": false,
+  "original_paper_new_training_observations": 0,
+  "APEX_training_disclosure": "partly unresolved checkpoint-linked full training list; not certified Full-ready",
+  "generator_training": "official AMP-Diffusion starter kit checkpoint; reference sequences in data/training/training.fasta; exact public provenance in DATA_SOURCES.md",
+  "pretrained_representation": "FAIR ESM2 UR50/D; MIT notice licenses/fair-esm-MIT.txt",
+  "redistribution": "identifiers/provenance supplied here; public source references are not blanket archive redistribution authorization",
+  "development_exposure": "Public train/development/evaluation partitions reused for fitting, screening and model selection; not independent final holdout.",
+  "qmap_role": "Public DBAASP consensus development/evaluation benchmark; not raw MIC; not the exact-label training matrix of these five deployed refits.",
+  "chemistry_unknown": "Chemical forms are incompletely resolved; sequence alone does not prove free termini. Later correction/endpoint refits are not deployed.",
+  "joint_evaluation": "Nested MIC/HC50 evaluation unsupported: four reviewed molecules, eight pairs, one paper/homology component.",
+  "source_data_redistribution": "Deferred by user on 2026-09-18. No additional raw source measurements are bundled; unknown permissions remain unknown.",
+  "manual_intervention": false
+}

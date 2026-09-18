@@ -1,0 +1,40 @@
+{
+  "candidate_freeze": "work/mic_prediction/20260914-papers-a/candidate_freeze.json",
+  "reviews": "work/mic_prediction/20260914-papers-a/paper_reviews.json",
+  "sources": "work/mic_prediction/20260914-papers-a/sources",
+  "retrieved_date": "2026-09-14",
+  "fit_manifest_globs": [
+    "work/mic_prediction/20260913-phase24-a/models/fits/*/*/manifest.json",
+    "work/mic_prediction/20260913-phase24-a/delta/fits/*/manifest.json",
+    "work/mic_prediction/20260914-genome-a/pilot-v3/models/*/manifest.json"
+  ],
+  "oof_files": [
+    "work/competition_exploration/20260912-b/phase3-r3/fits/linear8-a10-s42/oof.csv",
+    "work/competition_bioaccuracy/20260913-a/hc50-train/hc50_oof.csv",
+    "work/mic_prediction/20260913-phase24-a/controls-v2/finetune8-oof.csv.gz",
+    "work/mic_prediction/20260914-genome-a/pilot-v3/models/oof.jsonl"
+  ],
+  "observation_files": [
+    "work/measured_activity_research/data-20260911-c/observations_development.jsonl",
+    "work/measured_activity_research/data-20260911-c/observations_excluded_sequence.jsonl",
+    "work/measured_activity_research/data-20260911-c/observations_historical.jsonl",
+    "work/measured_activity_research/data-20260911-c/observations_holdout.jsonl",
+    "work/measured_activity_research/data-20260911-c/observations_train.jsonl",
+    "work/mic_prediction/20260913-phase01-a/evaluation-final/observations.jsonl"
+  ],
+  "unknowns": [
+    "APEX checkpoint-specific original training IDs unavailable",
+    "ESM pretraining exact membership not enumerated",
+    "Earlier historical holdout was reused for development; not newly independent",
+    "HC50 verified assay-to-paper linkage unavailable; sequence exposure recorded",
+    "Runs outside registered evidence patterns remain unknown; absence is not proof of non-use"
+  ],
+  "generator": {
+    "known_reference_files": [
+      "data/antibacterial.fasta",
+      "data/training/training.fasta"
+    ],
+    "checkpoint": "checkpoint/model.pt",
+    "exact_checkpoint_training_membership": "unknown; local fasta is reference evidence, not proof of complete checkpoint training set"
+  }
+}

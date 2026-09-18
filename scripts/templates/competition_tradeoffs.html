@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>選択条件の比較</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;color:#172b3a;background:#f3f6fa;margin:0}main{max-width:1500px;margin:auto;padding:32px}h1{font-size:2rem}h2{margin-top:2em}.card{background:white;border:1px solid #d7e2ed;border-radius:12px;padding:24px;margin:18px 0}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;background:white}th,td{padding:10px;border-bottom:1px solid #dbe4ee;text-align:right;white-space:nowrap}th{background:#e6eef7}td:first-child,th:first-child{text-align:left}.note{border-left:4px solid #e4a537;padding-left:16px}strong{color:#075985}@media print{body{background:white}main{padding:0}.scroll{overflow:visible}table{font-size:8px}}
+</style>
+<main>
+<p>AMP Challenge 2027 / __RUN_DATE__ / 保存poolによる探索</p>
+<h1>library・順位・フィルタを広げると、何が変わるか</h1>
+<div class="card">
+<strong>今回の比較内の推奨：__RECOMMEND__</strong>
+<p>現行B1/L2/C0を対照に、8種類の50,000配列libraryと__COUNT__選択条件を比較しました。__FEASIBLE__条件が100候補を作成し、公式の配列・件数・参照類似度検査に合格しました。提出方式の変更は後続の統合判断です。</p>
+<p class="note">ここでいう「活性」はAPEXによる予測です。実測改善の証明や、未公開のコンペ総合点の推定ではありません。</p>
+</div>
+<div class="card">
+<h2>比較の読み方</h2>
+<p>活性は7菌種を等重みとしたMIC≤16 µMのAPEX学習器投票率。弱い菌群は各候補で予測が低い3菌種の平均です。HC50は赤血球溶血の予測で、大きい値を良い方向として表示します。合成容易性等の通過率も経験則のproxyです。</p>
+<p>Random-25はTop100から重複なしで25件を10,000回抽出した活性予測の平均です。p50はその中央値、p05/p95は抽出のばらつきです。実験測定の信頼区間ではありません。</p>
+<p>5指標群を候補間percentileに揃え、等重み・活性重視・分布重視の3通りで順位を出しました。10seed×1k/2kの各条件で計算して平均します。入れ子の標本を独立した実験とは数えません。HC50が100件揃わない条件では、その中央値を全体順位の安全性成分から除き、共通oracle対象版もCSVに残します。</p>
+</div>
+<h2>全Top比較：現在との違い</h2>
+<div class="scroll">__TOP_TABLE__</div>
+<h2>libraryの分布比較</h2>
+<div class="scroll">__LIBRARY_TABLE__</div>
+<p>ESM2-8MのFBDは20条件の平均、ESM2-650Mと、追加した場合のESM-C 300Mはseed42・1,000件の別表現診断です。モデル間のFBD絶対値は直接比較せず、各モデル内で順位を比べてください。mix0.25/0.5/0.75は長さ別のcluster割当をL2から参照分布へ寄せたものです。lowOODは物性・埋め込みOODの合成順位で選択します。</p>
+<div class="card">
+<h2>校正・制約・安全性の扱い</h2>
+<p>C1/C2は既存46配列を配列別5foldに分けてfitし直した探索OOFです。校正器を全46配列に再fitして生成poolへ適用しました。既存データを再利用した評価であり、独立holdoutではありません。B3〜B6は校正なし・C1・C2を全て比較しています。</p>
+<p>公式必須だけの条件でも、Topの参照類似度≤0.80、標準残基・長さ・重複・library包含を守ります。HemoPI2の共通対象は各ranker上位10,000件の和集合です。対象外で安全性条件を補充しません。portfolioはAPEX由来の菌種specialistを25/50/75件先に確保し、全体制約を保ってconsensusで100件まで補う比較で、異なる新予測器のensembleは後続の予測器比較です。</p>
+</div>
+<p class="note">別表現の順位は必ずしも8Mと一致しません。分布重視の案を採用する前に、この感度と他の指標とのトレードオフを再検討します。ESM-C値が表示される場合はBuilt with ESM: ESM-C 300Mを<a href="https://www.evolutionaryscale.ai/policies/cambrian-open-license-agreement">Cambrian Open License Agreement</a>に基づく診断として使用しています。</p>
+<h2>証拠と再現</h2>
+<p>
+<a href="selection_matrix.csv">全条件</a> · <a href="library_comparison.csv">library raw metrics</a> · <a href="top_comparison.csv">Top raw metrics</a> · <a href="scenario_ranking.csv">シナリオ順位</a> · <a href="common_coverage.csv">共通oracle対象版</a> · <a href="screen_decision.json">screen判断</a>
+</p>
+<p>Minimumでは指定2名へのread access等、Fullでは公開Repo・開示・新方式の実際の2回生成等が別途必要です。今回の結果はartifact検査の完了であり、提出完了を意味しません。</p>
+</main>
+</html>

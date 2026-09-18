@@ -1,0 +1,35 @@
+{
+  "paper": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7824259/fullTextXML",
+    "sha256": "f34b4343f63ebd076aab57b287fabc044c130341281eed1e74060a8d7dc5d6f9",
+    "license": "CC BY 4.0",
+    "pmid": "33401476",
+    "table": "antibiotics-10-00036-t001",
+    "reviewed_sections": [
+      "Table 1",
+      "Methods 4.1",
+      "Methods 4.2"
+    ],
+    "chemistry": "existing source-reported linear free form; not independent MS verification"
+  },
+  "cliff_reference": {
+    "repository": "https://github.com/Kewei2023/AMPCliff-generation",
+    "revision": "2bfd359e2bc09dc69724631763a5ac0a049a3d49",
+    "files": {
+      "generate_cliffs.py": "53a42e149ff45013ff09db76c8842d75207bf13dd54bdc20dd0828b7f5805448",
+      "normalization-fixed.py": "a7be1912746aaaebf1e72a62ebfb21f4043c212b763e07405b9afafc83b11a64"
+    },
+    "use": "source inspection only; no imported upstream package"
+  },
+  "similarity_threshold": 0.9,
+  "value_rtol": 0.01,
+  "value_atol_um": 0.005,
+  "assay": {
+    "medium": "MHB",
+    "cfu": "5E5",
+    "notes": [
+      "",
+      "MRSA"
+    ]
+  }
+}

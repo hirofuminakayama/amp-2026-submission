@@ -1,0 +1,21 @@
+[project]
+name = "apex-pathogen-scorer"
+version = "1.0.0"
+description = "APEX-pathogen MIC-prediction ensemble (11 clinical pathogens, 8 models), isolated scoring env for the AMP-Diffusion starter kit. This is the APEX release used to score the AMP-Diffusion library in Torres et al., Cell Biomaterials 2025 (gitlab machine-biology-group-public/apex-pathogen). Runs in its own uv environment so it never conflicts with the kit's ESM2/torch stack."
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "torch==2.5.1",
+    "numpy<2",
+    "pandas>=2.0",
+    "biopython>=1.83",
+]
+
+# APEX inference is a light scoring step (8 models), so it runs on CPU (the diffusion sampler
+# owns the GPU). Pinning the CPU torch build keeps this isolated env small.
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

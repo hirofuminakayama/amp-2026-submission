@@ -1,0 +1,62 @@
+{
+  "registry": "work/mic_prediction/20260914-papers-a/registry-v2",
+  "curation": "work/mic_prediction/20260914-papers-a/curation-v4",
+  "legacy_observations": "work/mic_prediction/20260913-phase01-a/evaluation-final/observations.jsonl",
+  "legacy_training_rows": "work/mic_prediction/20260913-phase01-a/evaluation-final/rows.jsonl",
+  "certified_unused_papers": {},
+  "comparators": [
+    {
+      "name": "linear8",
+      "files": [
+        "work/competition_exploration/20260912-b/phase3-refits/linear8/manifest.json",
+        "work/competition_exploration/20260912-b/phase3-refits/linear8/weights.npz",
+        "work/competition_exploration/20260912-b/phase3-refits/selected_models.json"
+      ],
+      "target_level": "species_head; exact strain is not inferred"
+    },
+    {
+      "name": "finetune8",
+      "files": [
+        "work/competition_exploration/20260912-b/phase3-refits/finetune8/manifest.json",
+        "work/competition_exploration/20260912-b/phase3-refits/finetune8/weights.pt",
+        "work/competition_exploration/20260912-b/phase3-refits/selected_models.json"
+      ],
+      "target_level": "species_head; exact strain is not inferred"
+    }
+  ],
+  "comparison_settings": {
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "data_arms": [
+      "original",
+      "corrected",
+      "corrected_plus_new_training"
+    ],
+    "finetune_setting_source": "work/competition_exploration/20260912-b/phase3-refits/selected_models.json",
+    "apex": "common exact-strain rows only; checkpoint training membership unknown",
+    "delta": "only if both partitions support comparable pairs from multiple papers",
+    "bootstrap": {
+      "seed": 42,
+      "repetitions": 1000,
+      "unit": "paper_homology_component",
+      "minimum_components": 5
+    }
+  },
+  "metrics": {
+    "primary": "exact MIC species-macro MAE in log2 uM",
+    "secondary": [
+      "RMSE",
+      "within 1 dilution",
+      "within 2 dilutions",
+      "PCC",
+      "Spearman",
+      "top20percent activity rate",
+      "censored boundary violations",
+      "species/paper/component coverage"
+    ],
+    "unsupported": "report target levels and denominators; no silent exclusion"
+  }
+}

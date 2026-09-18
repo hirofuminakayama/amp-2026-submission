@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+generate/
+generate_broad_spectrum/
+smoke_output/
+work/
+*.failed-*/
+*.backup-*/
+checkpoint/competition_predictors/esm2_t33_650M_UR50D.pt
+checkpoint/competition_predictors/esm2_t33_650M_UR50D-contact-regression.pt

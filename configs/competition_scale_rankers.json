@@ -1,0 +1,15 @@
+[
+  "B1",
+  "species",
+  "finetune8-w0.5",
+  "finetune8-w0.75",
+  "mlp8-w0.5",
+  "mlp8-w0.75",
+  "linear8-w0.5",
+  "linear8-w0.75",
+  "linear650-w0.5",
+  "linear650-w0.75",
+  "physchem-w0.5",
+  "physchem-w0.75",
+  "rankmean"
+]

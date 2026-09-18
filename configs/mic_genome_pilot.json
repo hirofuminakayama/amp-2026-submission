@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "prepared": "work/mic_prediction/20260913-phase01-a/evaluation-final",
+  "lineage": "work/mic_prediction/20260913-phase01-a/lineage-final",
+  "peptide_features": "work/competition_exploration/20260912-b/phase3-r3/esm8/features.npy",
+  "pool_features": "work/competition_exploration/20260912-b/phase3-refits/esm8.npy",
+  "pool_sequences": "work/competition_exploration/20260912-b/phase3-refits/pool_sequences.csv",
+  "apex_pool": "work/phase11-clean-0f2f600/full_run_1/work/apex_predictions.npz",
+  "auxiliary_species": [
+    "Bacillus subtilis",
+    "Staphylococcus epidermidis"
+  ],
+  "species_references": {
+    "Escherichia coli": "GCF_000005845.2",
+    "Pseudomonas aeruginosa": "GCF_000006765.1",
+    "Staphylococcus aureus": "GCF_000013465.1",
+    "Acinetobacter baumannii": "GCF_009035845.1",
+    "Klebsiella pneumoniae": "GCF_000742135.1",
+    "Enterococcus faecalis": "GCF_000742975.1",
+    "Enterococcus faecium": "GCF_000174395.2",
+    "Bacillus subtilis": "GCF_000009045.1",
+    "Staphylococcus epidermidis": "GCF_000007645.1"
+  },
+  "assemblies": [
+    {
+      "accession": "GCF_000743255.1",
+      "species": "Escherichia coli",
+      "labels": [
+        "Escherichia coli ATCC 25922"
+      ]
+    },
+    {
+      "accession": "GCF_000005845.2",
+      "species": "Escherichia coli",
+      "labels": [
+        "Escherichia coli MG1655",
+        "Escherichia coli K-12 MG1655"
+      ]
+    },
+    {
+      "accession": "GCF_003697165.2",
+      "species": "Escherichia coli",
+      "labels": [
+        "Escherichia coli ATCC 11775",
+        "E. coli ATCC 11775"
+      ]
+    },
+    {
+      "accession": "GCF_000750555.1",
+      "species": "Escherichia coli",
+      "labels": [
+        "Escherichia coli BW25113"
+      ]
+    },
+    {
+      "accession": "GCF_000006765.1",
+      "species": "Pseudomonas aeruginosa",
+      "labels": [
+        "Pseudomonas aeruginosa PAO1"
+      ]
+    },
+    {
+      "accession": "GCF_000014625.1",
+      "species": "Pseudomonas aeruginosa",
+      "labels": [
+        "Pseudomonas aeruginosa PA14",
+        "Pseudomonas aeruginosa UCBPP-PA14",
+        "P. aeruginosa PA14"
+      ]
+    },
+    {
+      "accession": "GCF_001618925.1",
+      "species": "Pseudomonas aeruginosa",
+      "labels": [
+        "Pseudomonas aeruginosa ATCC 27853"
+      ]
+    },
+    {
+      "accession": "GCF_000756205.1",
+      "species": "Staphylococcus aureus",
+      "labels": [
+        "Staphylococcus aureus ATCC 25923"
+      ]
+    },
+    {
+      "accession": "GCF_022832775.1",
+      "species": "Staphylococcus aureus",
+      "labels": [
+        "Staphylococcus aureus ATCC 29213"
+      ]
+    },
+    {
+      "accession": "GCF_006094915.1",
+      "species": "Staphylococcus aureus",
+      "labels": [
+        "Staphylococcus aureus ATCC 12600",
+        "S. aureus ATCC 12600"
+      ]
+    },
+    {
+      "accession": "GCF_000013465.1",
+      "species": "Staphylococcus aureus",
+      "labels": [
+        "Staphylococcus aureus USA300 FPR3757"
+      ]
+    },
+    {
+      "accession": "GCF_009035845.1",
+      "species": "Acinetobacter baumannii",
+      "labels": [
+        "Acinetobacter baumannii ATCC 19606",
+        "A. baumannii ATCC 19606"
+      ]
+    },
+    {
+      "accession": "GCF_011067065.1",
+      "species": "Acinetobacter baumannii",
+      "labels": [
+        "Acinetobacter baumannii ATCC 17978"
+      ]
+    },
+    {
+      "accession": "GCF_000742135.1",
+      "species": "Klebsiella pneumoniae",
+      "labels": [
+        "Klebsiella pneumoniae ATCC 13883",
+        "K. pneumoniae ATCC 13883"
+      ]
+    },
+    {
+      "accession": "GCF_001596075.2",
+      "species": "Klebsiella pneumoniae",
+      "labels": [
+        "Klebsiella pneumoniae ATCC 700603"
+      ]
+    },
+    {
+      "accession": "GCF_000742975.1",
+      "species": "Enterococcus faecalis",
+      "labels": [
+        "Enterococcus faecalis ATCC 29212"
+      ]
+    },
+    {
+      "accession": "GCF_000007785.1",
+      "species": "Enterococcus faecalis",
+      "labels": [
+        "Enterococcus faecalis V583"
+      ]
+    },
+    {
+      "accession": "GCF_000174395.2",
+      "species": "Enterococcus faecium",
+      "labels": [
+        "Enterococcus faecium DO"
+      ]
+    },
+    {
+      "accession": "GCF_000009045.1",
+      "species": "Bacillus subtilis",
+      "labels": [
+        "Bacillus subtilis 168"
+      ]
+    },
+    {
+      "accession": "GCF_000007645.1",
+      "species": "Staphylococcus epidermidis",
+      "labels": [
+        "Staphylococcus epidermidis ATCC 12228"
+      ]
+    },
+    {
+      "accession": "GCF_000011925.1",
+      "species": "Staphylococcus epidermidis",
+      "labels": [
+        "Staphylococcus epidermidis RP62A"
+      ]
+    }
+  ],
+  "settings": {
+    "width": 32,
+    "heads": 1,
+    "scale_floor": 0.1,
+    "learning_rate": 0.001,
+    "epochs": 80,
+    "batch_size": 256,
+    "loss": "interval",
+    "device": "cpu"
+  },
+  "seed": 42,
+  "strain_folds": 3,
+  "cpu_threads": 2,
+  "peptide_sequences": "work/competition_exploration/20260912-b/phase3-r3/prepare/sequences.fasta"
+}

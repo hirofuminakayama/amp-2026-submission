@@ -1,0 +1,8 @@
+{
+  "external": "work/mic_prediction/20260914-phase78-a/evaluation-v2",
+  "prepared": "work/mic_prediction/20260913-phase01-a/evaluation-final",
+  "features": "work/competition_exploration/20260912-b/phase3-r3/esm8/features.npy",
+  "feature_sequences": "work/competition_exploration/20260912-b/phase3-r3/prepare/sequences.fasta",
+  "selected_models": "work/competition_exploration/20260912-b/phase3-refits/selected_models.json",
+  "training_config": "configs/competition_models.json"
+}

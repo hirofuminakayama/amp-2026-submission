@@ -1,0 +1,21 @@
+{
+  "prior_models": "work/competition_exploration/20260912-b/phase3-r3",
+  "prior_report": "work/competition_exploration/20260912-b/phase3-report",
+  "prior_refits": "work/competition_exploration/20260912-b/phase3-refits",
+  "development": "work/competition_exploration/20260912-a/phase1-r4",
+  "apex_development": "work/competition_exploration/20260912-b/phase3-apex/predictions.npz",
+  "frozen_pool": "work/phase11-clean-0f2f600/full_run_1",
+  "source_root": "work/measured_activity_research/sources",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "identity_threshold": 0.6,
+  "seeds": [42, 43, 44],
+  "epochs": 80,
+  "batch_size": 256,
+  "widths": [32, 64],
+  "learning_rate": 0.001,
+  "scale_floor": 0.1,
+  "cpu_threads": 2,
+  "gpu_hours": 96,
+  "device": "cpu"
+}

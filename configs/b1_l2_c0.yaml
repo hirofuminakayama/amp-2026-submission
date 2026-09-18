@@ -1,0 +1,46 @@
+schema_version: 1
+seed: 42
+output_dir: generate
+runtime:
+  device: cuda
+  strict_determinism: true
+  cpu_threads: 8
+generation:
+  sampler: official
+  raw_pool_size: 60000
+  library_size: 50000
+  batch_size: 128
+  checkpoint: checkpoint/model.pt
+  length_policy: empirical_tempered
+  min_generation_length: 10
+  max_generation_length: 40
+  length_temperature: 0.75
+references:
+  challenge_fasta: data/antibacterial.fasta
+  known_amp_fasta: data/training/training.fasta
+ranking:
+  official_challenge_similarity_max: 0.80
+  selection_challenge_similarity_max: 0.78
+  known_local_similarity_max: 0.60
+  pairwise_local_similarity_max: 0.50
+  adopted_ranker: B1
+  enabled: true
+  fallback: official_linear_mean
+features:
+  physicochemical:
+    enabled: false
+    fallback: no_physchem_filter
+  embeddings:
+    enabled: false
+    fallback: no_embedding_qd
+apex:
+  use_base_learner_disagreement: false
+  fallback: official_linear_mean
+calibration:
+  use_calibration: false
+  fallback: C0_vote_fraction
+library_selection:
+  enabled: true
+  adopted_variant: L2
+  fallback: L0_first_valid
+  minimum_full_pool_size: 50000

@@ -1,0 +1,77 @@
+[project]
+name = "robust-apex-qd"
+version = "0.1.0"
+description = "Deterministic AMP-Diffusion generation and compliance pipeline for AMP Challenge 2027"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = { file = "LICENSE" }
+dependencies = [
+    "biopython>=1.83",
+    "einops>=0.7",
+    "ema-pytorch>=0.4",
+    "fair-esm>=2.0.0",
+    "levenshtein>=0.25",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "pydantic>=2.8,<3",
+    "pyyaml>=6.0",
+    "scikit-learn>=1.5,<2",
+    "torch==2.7.1",
+    "tqdm>=4.60",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.12",
+    "ty>=0.0.75",
+]
+
+[project.scripts]
+generate = "robust_apex_qd.cli:generate_main"
+generate_broad_spectrum = "robust_apex_qd.cli:generate_broad_spectrum_main"
+smoke = "robust_apex_qd.cli:smoke_main"
+verify-local = "robust_apex_qd.cli:verify_local_main"
+evaluate-ranker = "robust_apex_qd.cli:evaluate_ranker_main"
+evaluate-library = "robust_apex_qd.cli:evaluate_library_main"
+evaluate-submission = "robust_apex_qd.cli:evaluate_submission_main"
+prepare-evaluation-oracles = "robust_apex_qd.cli:prepare_evaluation_oracles_main"
+train-calibrator = "robust_apex_qd.cli:train_calibrator_main"
+
+[project.optional-dependencies]
+analysis = [
+    "seqme==0.5.1",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+markers = [
+    "gpu: requires a CUDA GPU and the full AMP-Diffusion checkpoint",
+]
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = [
+    "apex",
+    "scripts/verify_submission.py",
+    "src/ampdiffusion_starter_kit",
+]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ty.src]
+exclude = ["apex", "src/ampdiffusion_starter_kit"]

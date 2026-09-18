@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "variant": "C1",
+  "feature_order": [
+    "median_log2_predicted_mic"
+  ],
+  "coefficients": [
+    -0.36452393028400326
+  ],
+  "intercept": 0.8150452108389593,
+  "training_sha256": "b751dca94eacb05ed48caccfb41ef047a7ce11d85b38cdf5e7d189d96798fd71",
+  "cv_metrics": {
+    "brier": 0.2022520616886421,
+    "log_loss": 0.5922493997876428,
+    "auroc": 0.6481484861204899,
+    "auprc": 0.44099549087182477,
+    "peptide_success_spearman": -0.4365281884867397
+  },
+  "seed": 42,
+  "folds": 5
+}

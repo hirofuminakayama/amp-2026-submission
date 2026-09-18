@@ -1,0 +1,20 @@
+{
+  "checkpoint": "checkpoint/model.pt",
+  "reference": "data/training/training.fasta",
+  "challenge": "data/antibacterial.fasta",
+  "batch_size": 128,
+  "cpu_threads": 8,
+  "min_length": 10,
+  "max_length": 40,
+  "paired_max_length": 25,
+  "seeds": [
+    43
+  ],
+  "temperatures": [],
+  "length_count": 2000,
+  "sampling_steps": [
+    1000
+  ],
+  "sampler_count": 60000,
+  "scope": "expanded competition development pool; prior pools remain read-only"
+}

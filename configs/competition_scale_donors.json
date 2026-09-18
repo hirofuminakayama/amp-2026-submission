@@ -1,0 +1,152 @@
+{
+  "sources": {
+    "prompt": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 1745,
+      "runs": [
+        "prompt-s42",
+        "prompt-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "designer": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 1969,
+      "runs": [
+        "designer-s42",
+        "designer-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "ampgen": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 1897,
+      "runs": [
+        "ampgen-s42",
+        "ampgen-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "deepamp-common": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 2000,
+      "runs": [
+        "deepamp-common-s42",
+        "deepamp-common-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "hydramp": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 2000,
+      "runs": [
+        "hydramp-s42",
+        "hydramp-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "evodiff-sft": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 2000,
+      "runs": [
+        "evodiff-sft-s42",
+        "evodiff-sft-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    },
+    "evodiff-rl": {
+      "path": "work/competition_exploration/20260912-b/phase4-evaluation/collect/samples.csv.gz",
+      "sha256": "19501184260b71ff1429c1a1510858b539a6280a99bd5bcc4cb64a497ebe4181",
+      "count": 2000,
+      "runs": [
+        "evodiff-rl-s42",
+        "evodiff-rl-s43"
+      ],
+      "input_scope": "valid emitted screen records; raw and internal-filter denominators remain in the prior generator comparison"
+    }
+  },
+  "pools": {
+    "donors": [
+      "prompt",
+      "designer",
+      "ampgen",
+      "deepamp-common",
+      "hydramp",
+      "evodiff-sft",
+      "evodiff-rl"
+    ]
+  },
+  "baseline": "work/phase11-clean-0f2f600/full_run_1",
+  "prior_selection": "work/competition_exploration/20260912-a/phase2",
+  "refits": "work/competition_exploration/20260912-b/phase3-refits",
+  "model_config": "configs/competition_models.json",
+  "challenge": "data/antibacterial.fasta",
+  "reference": "data/training/training.fasta",
+  "size": 50000,
+  "top_k": 100,
+  "library_variants": [
+    "L2",
+    "mix0.75",
+    "Lref",
+    "lowOOD"
+  ],
+  "rankers": [
+    "B1",
+    "species",
+    "finetune8-w0.75",
+    "finetune8-w0.5",
+    "mlp8-w0.75",
+    "linear8-w0.75",
+    "linear650-w0.75",
+    "physchem-w0.75",
+    "rankmean"
+  ],
+  "constraint_variants": [
+    "current",
+    "challenge80"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "subset_sizes": [
+    1000,
+    2000
+  ],
+  "scenarios": {
+    "equal": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "activity": [
+      0.5,
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "distribution": [
+      0.125,
+      0.125,
+      0.125,
+      0.5,
+      0.125
+    ]
+  },
+  "mixture_fractions": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "claim": "development computational comparison, not independent experimental activity",
+  "minimum_pool_size": 1
+}

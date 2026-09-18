@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "family": "physchem",
+  "feature_dimension": 33,
+  "unit": "log2_uM",
+  "width": null,
+  "training_parameters": {
+    "alpha": 1.0
+  },
+  "training_dataset_sha256": "5fd5b9d7680ececc7bf82849c3e463c424d3a84cff4ac40b1fb31ad358018258",
+  "source_weights_sha256": "aac52bf74ebf8af88376550b72701104544353d6a22ebbeb48675e4d889a60ab",
+  "source_manifest_sha256": "0ec81e47a98ca38cb62cb714f7c646c445db3b58d4a345ea9006c0c1f57588a9",
+  "artifacts_sha256": {
+    "arrays.npz": "5e13665d441f46fef56e5eac622fd6584219f6c16a26d9525e5b6c29e5eb196c"
+  }
+}

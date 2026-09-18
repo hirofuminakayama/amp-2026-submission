@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-09-11",
+  "sources": [
+    {
+      "path": "qmap/QMAP/README.md",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/README.md",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "93c9fd94f0434ffeef91856a58a065764f22a0bbde28cc31424a7ef6978e9005"
+    },
+    {
+      "path": "qmap/QMAP/docs/references/train_test_split.md",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/docs/references/train_test_split.md",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "1f01539008721ecd2fa1e8c6e86dd9f2146ac8bc9222ac1a31b24f6fe0f76091"
+    },
+    {
+      "path": "qmap/QMAP/pwiden_engine/src/utils/alignment.rs",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/pwiden_engine/src/utils/alignment.rs",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "9c3ebf8ca0742291872b8f1df11f16d0d1d432df6a4a5c3d9a9ce7080bd67abf"
+    },
+    {
+      "path": "qmap/QMAP/src/qmap/benchmark/benchmark.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/src/qmap/benchmark/benchmark.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "716ad5af0fb19b3cff164d9bfef705d52737eea60826bab4dce7765b74a94846"
+    },
+    {
+      "path": "qmap/QMAP/src/qmap/benchmark/dataset/dataset.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/src/qmap/benchmark/dataset/dataset.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "8033113ad3b203515d4c8b91248ae707a7b3f9aee9fd5994fd2c5dd67dbbb632"
+    },
+    {
+      "path": "qmap/QMAP/src/qmap/benchmark/dataset/sample.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/src/qmap/benchmark/dataset/sample.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "dcd3cb7595601340c8a927758c55cc13b4b0db46f9dc856c4e6e0eef9c2bc875"
+    },
+    {
+      "path": "qmap/QMAP/src/qmap/toolkit/split/train_test_split.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/QMAP/src/qmap/toolkit/split/train_test_split.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "2f00f9b466993ad95552011ba07b91fc5351307603450eca1d53df320158ef9b"
+    },
+    {
+      "path": "qmap/data/README.md",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/data/README.md",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "da07602cec1188ba76bcfe0afaf51108c0a50dba917caa3998c012c95cfd976a"
+    },
+    {
+      "path": "qmap/data/dbaasp/build_dataset.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/data/dbaasp/build_dataset.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "12cde4f8834a3fd3066b6f33f97015c8470780a8c9e785eb0afff3ef2f9ce680"
+    },
+    {
+      "path": "qmap/data/dbaasp/make_benchmark.py",
+      "url": "https://raw.githubusercontent.com/anthol42/QMAP/ea7967441ad6ee84560b3da979e709361c873548/data/dbaasp/make_benchmark.py",
+      "revision": "ea7967441ad6ee84560b3da979e709361c873548",
+      "sha256": "84d34329fd17ba282fe318b0c01f6fe61e9e53e0fa51a18963731f044b88c18a"
+    },
+    {
+      "path": "battleamp/LICENSE",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/LICENSE",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "08ad50c56e46aa52bde99d681f6810747d2b552741f96ca46bc2536c0b83afa8"
+    },
+    {
+      "path": "battleamp/README.md",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/README.md",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "c3c34bf6a4e5047fa887b55cba8bb368c673296820e6c41cffbee6c32fe0ec05"
+    },
+    {
+      "path": "battleamp/data/activity/strain/escherichiacoliatcc25922_mic.csv",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/data/activity/strain/escherichiacoliatcc25922_mic.csv",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "b2b12a2915db1242b8e5c2dbe6b9ba08cb453a9cee704e4077202023aa46d85b"
+    },
+    {
+      "path": "battleamp/data/activity/strain/staphylococcusaureusatcc25923_mic.csv",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/data/activity/strain/staphylococcusaureusatcc25923_mic.csv",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "6930f1951244dd725f5ae99c5b7a4854c1fa411e2a745b965e303e8ec812d340"
+    },
+    {
+      "path": "battleamp/data/dbaasp/dbaasp_activity.csv",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/data/dbaasp/dbaasp_activity.csv",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "63c8a1a3d7fbeadd2d115b5ce932b5ddf1b983e6785b0bf67f0bd1d85a8adad8"
+    },
+    {
+      "path": "battleamp/data/dbaasp/dbaasp_sequences.csv",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/data/dbaasp/dbaasp_sequences.csv",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "d414dc83f01889e22d22c3c9b6d00018547de900040a1df138e7fd886779f245"
+    },
+    {
+      "path": "battleamp/data/dbaasp/dbaasp_taxonomy.csv",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/data/dbaasp/dbaasp_taxonomy.csv",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "f04f7c46b2d874c73b77c112432363dc3f2041d1f5afaaf9458d986da9dba0cf"
+    },
+    {
+      "path": "battleamp/scripts/data_preparation/02_dbaasp_jsons_to_csv.py",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/scripts/data_preparation/02_dbaasp_jsons_to_csv.py",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "e0155d38417cbd081019d81009795d5056ba4f757d956a8e25414e4bf726d989"
+    },
+    {
+      "path": "battleamp/scripts/data_preparation/03_clean_dbaasp.py",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/scripts/data_preparation/03_clean_dbaasp.py",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "5eb37b3276d713e86a5c66e4e2ce3a15ab71e230204b7ed2ac97abf0ddd43ce8"
+    },
+    {
+      "path": "battleamp/scripts/data_preparation/README.md",
+      "url": "https://raw.githubusercontent.com/szczurek-lab/battleamp-snakemake/72e26f705badbd83ddcd347ba96cff16ae4278f6/scripts/data_preparation/README.md",
+      "revision": "72e26f705badbd83ddcd347ba96cff16ae4278f6",
+      "sha256": "a2ecd0fbf53413c9b07e7a41e8f6646aac6a8dbfdb4a26ba9956d979c79e1ce7"
+    },
+    {
+      "path": "qmap_hf/README.md",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/README.md",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "8d933dbd03a846a38e414b6193a2c569580b3a77680a6d1a746e325ddda54a13"
+    },
+    {
+      "path": "qmap_hf/benchmark_split_0.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/benchmark_split_0.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "a610267e987120a7f7395d7e4abcac1b263c0e39e39237cf3a9028809e3e1e4d"
+    },
+    {
+      "path": "qmap_hf/benchmark_split_1.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/benchmark_split_1.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "acb07e5f9723540f38de552c4aa03e2a052d5a9f4f89f5b5bfe07af0b0505d5b"
+    },
+    {
+      "path": "qmap_hf/benchmark_split_2.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/benchmark_split_2.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "0f39ffbe6801df72ea622aa7fc11fc0ede2cfc2f5db7869aa6682618dde31ed4"
+    },
+    {
+      "path": "qmap_hf/benchmark_split_3.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/benchmark_split_3.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "3ccc4cd7c4ed48450cdb67b4cc2f63a38552d7f1e320d3e2319420e5eb70e50e"
+    },
+    {
+      "path": "qmap_hf/benchmark_split_4.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/benchmark_split_4.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "1ac7cf4afe457fe666ec8a78f61f4c2cc8de3e2411e1153ac55164b21951f8a8"
+    },
+    {
+      "path": "qmap_hf/dbaasp.json",
+      "url": "https://huggingface.co/datasets/anthol42/qmap_benchmark_2025/resolve/cf5ff24fd963f293ff4bc24e5933b411bec1bf33/dbaasp.json",
+      "revision": "cf5ff24fd963f293ff4bc24e5933b411bec1bf33",
+      "sha256": "1f68ca0228f8deb3899af992cc8ff4729aff636e3d1af10dba19ba34227f404f"
+    }
+  ]
+}

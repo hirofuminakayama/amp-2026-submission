@@ -1,0 +1,10 @@
+{
+  "dataset": "work/competition_exploration/20260912-a/phase1-r4",
+  "esm8_checkpoint": "/home/hnaka/.cache/torch/hub/checkpoints/esm2_t6_8M_UR50D.pt",
+  "esm650_checkpoint": "work/measured_activity_research/model-assets-20260911/esm2_t33_650M_UR50D.pt",
+  "mlp_batch_size": 64,
+  "finetune_batch_size": 16,
+  "selection": "macro species top20 activity descending, exact MAE ascending, id; development screening only",
+  "scope": "seven competition species; other species retained in exclusion inventory",
+  "budget_gpu_hours": 48
+}

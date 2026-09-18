@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "subset_sizes": [
+    1000,
+    2000
+  ],
+  "library_size": 50000,
+  "top_k": 100,
+  "old_selection": "work/measured_activity_research/selection-20260911-c",
+  "old_dataset": "work/measured_activity_research/data-20260911-c",
+  "sources": "work/measured_activity_research/sources",
+  "frozen_run": "work/phase11-clean-0f2f600/full_run_1",
+  "oracle_dir": "work/oracles/hemopi2",
+  "rankers": [
+    "B0",
+    "B1",
+    "B2",
+    "C0-B3",
+    "C0-B4",
+    "C0-B5",
+    "C0-B6",
+    "C1-B3",
+    "C1-B4",
+    "C1-B5",
+    "C1-B6",
+    "C2-B3",
+    "C2-B4",
+    "C2-B5",
+    "C2-B6",
+    "balanced",
+    "tail90",
+    "worst3",
+    "species"
+  ],
+  "library_blends": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "constraints": {
+    "current": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": 5,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "challenge80": {
+      "challenge_max": 0.8,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": 5,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "known_none": {
+      "challenge_max": 0.78,
+      "known_max": null,
+      "pairwise_max": 0.5,
+      "cluster_cap": 5,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "pair70": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.7,
+      "cluster_cap": 5,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "pair_none": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": null,
+      "cluster_cap": 5,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "cluster8": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": 8,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "cluster_none": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": null,
+      "physchem": "hard",
+      "prefilter": 10000
+    },
+    "physchem_soft": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": 5,
+      "physchem": "soft",
+      "prefilter": 10000
+    },
+    "physchem_none": {
+      "challenge_max": 0.78,
+      "known_max": 0.6,
+      "pairwise_max": 0.5,
+      "cluster_cap": 5,
+      "physchem": "none",
+      "prefilter": 10000
+    },
+    "official_only": {
+      "challenge_max": 0.8,
+      "known_max": null,
+      "pairwise_max": null,
+      "cluster_cap": null,
+      "physchem": "none",
+      "prefilter": null
+    }
+  },
+  "safety": [
+    "none",
+    "hard",
+    "soft"
+  ],
+  "portfolio_fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "oracle_prefilter": 10000,
+  "oracle_batch_size": 1000,
+  "random25_draws": 10000,
+  "random25_seed": 42,
+  "soft_penalty": 0.15,
+  "bootstrap_iterations": 200,
+  "calibration_folds": 5,
+  "calibration_seed": 42,
+  "calibration_cohort": "historical 46 peptides; fresh grouped OOF, not independent validation",
+  "development_reuse": "all public partitions including old holdout/historical; no independent holdout claim",
+  "homology": {
+    "identity": 0.8,
+    "coverage": 0.8,
+    "match": 2,
+    "mismatch": -1,
+    "gap_open": -2,
+    "gap_extend": -0.5,
+    "identity_denominator": "full global alignment columns; first optimal alignment in lexical pair order"
+  },
+  "data_arms": [
+    "unknown-inclusive",
+    "free-linear",
+    "exact-strain",
+    "shared-species",
+    "exact-regression",
+    "determined-classification",
+    "interval",
+    "qmap-consensus"
+  ],
+  "selection": {
+    "groups": [
+      "activity",
+      "weak_species",
+      "safety",
+      "distribution",
+      "diversity"
+    ],
+    "scenarios": {
+      "equal": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "activity": [
+        0.5,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "distribution": [
+        0.125,
+        0.125,
+        0.125,
+        0.5,
+        0.125
+      ]
+    },
+    "rule": "direction-aligned percentile within family; mean seed metrics, mean three scenario ranks; tie by measured runtime then id",
+    "missing": "report reason, renormalize; also common coverage",
+    "hard_gates": "official compliance and execution feasibility only"
+  },
+  "budget_gpu_hours": {
+    "data": 24,
+    "predictors": 48,
+    "generators": 48,
+    "pool": 48,
+    "integration": 72,
+    "reserve": 48
+  },
+  "family_limits": {
+    "initial_asset_hours": 4,
+    "initial_gpu_hours": 2,
+    "screen_seeds": [
+      42,
+      43
+    ],
+    "screen_count": 1000,
+    "smoke_count": 32
+  },
+  "families": [
+    {
+      "id": "E01",
+      "hypothesis": "L0/L1/L2/Lref",
+      "old_reason": "FBD gate・活性根拠なしでは変更禁止",
+      "minimum_comparison": "既存4 libraryを再集計、Lref/低OOD/クラスタ配分を連続的に混ぜる",
+      "crosswalk": "R1;D010;RESULTS library",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "L0/L1/L2/Lref",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E02",
+      "hypothesis": "C0/C1/C2",
+      "old_reason": "Brier改善でもSpearman gate失敗",
+      "minimum_comparison": "fold内再fitと校正なしを比較、B3〜B6へ接続",
+      "crosswalk": "RESULTS calibration",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "C0/C1/C2",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E03",
+      "hypothesis": "B0〜B6、balanced、tail90、worst3",
+      "old_reason": "B1維持・全菌群非悪化条件",
+      "minimum_comparison": "同じpoolで全順位と菌種等重み／菌株等重みを比較",
+      "crosswalk": "R3;D009;D010",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "B0〜B6、balanced、tail90、worst3",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E04",
+      "hypothesis": "Top制約の緩和・除去",
+      "old_reason": "known≤0.60、pairwise、cluster cap、hard physchem等を固定",
+      "minimum_comparison": "公式必須のみ、現行、一因子除去とsoft penaltyを比較",
+      "crosswalk": "R3;D010",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "Top制約の緩和・除去",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E05",
+      "hypothesis": "HemoPI2・developability",
+      "old_reason": "活性proxy低下・固定B1 prefilterで制限",
+      "minimum_comparison": "none/hard/soft、各ranker上位の共通unionへoracle coverage拡大",
+      "crosswalk": "R4;D010",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "HemoPI2・developability",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E06",
+      "hypothesis": "既存5小型予測器とAPEX ensemble",
+      "old_reason": "69行・独立評価不足・等重み1案限定",
+      "minimum_comparison": "既存OOF再利用、APEX重み0/.25/.5/.75/1と小規模parameter探索",
+      "crosswalk": "R2;D009;D013",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "既存5小型予測器とAPEX ensemble",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E07",
+      "hypothesis": "公開MICデータ拡大・分割見直し",
+      "old_reason": "化学形unknown・論文群/LCS上界で過剰連結",
+      "minimum_comparison": "公開DBから広い学習集合、未知化学形を含む感度分析、実際の類似度でCV",
+      "crosswalk": "R0;D003;D004;D005;D006;D007;D008",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "公開MICデータ拡大・分割見直し",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E08",
+      "hypothesis": "菌種共通／菌株別・打切り・consensus学習",
+      "old_reason": "exact菌株MICのみ・群数下限",
+      "minimum_comparison": "菌種共有head、interval loss、QMAP consensusを別目的として比較",
+      "crosswalk": "R0;R2;D003;D009",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "菌種共通／菌株別・打切り・consensus学習",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E09",
+      "hypothesis": "DDIM250/500、長さ指数.6/.75/1",
+      "old_reason": "速度のみでは採用不可",
+      "minimum_comparison": "既存screen再利用、独立評価なしで120k生成を試す",
+      "crosswalk": "R5;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "DDIM250/500、長さ指数.6/.75/1",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E10",
+      "hypothesis": "120k pool・複数seed・pool混合",
+      "old_reason": "scale_requires_independent_activity_evidence",
+      "minimum_comparison": "60k対照＋別seed60kのunion、DDIM120k、実行可能なら240k",
+      "crosswalk": "R5;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "120k pool・複数seed・pool混合",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E11",
+      "hypothesis": "HydrAMP",
+      "old_reason": "未検証proxyで低値・分布差",
+      "minimum_comparison": "既存2seed再評価、単独と10/25/50%混合、条件付き生成も小規模比較",
+      "crosswalk": "R6;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "HydrAMP",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E12",
+      "hypothesis": "AMP-Designer",
+      "old_reason": "base GPT smokeのみ、統合見送り",
+      "minimum_comparison": "公開推論を1k×2seed、prompt/学習済み最適化部が使えれば別armで比較",
+      "crosswalk": "R7;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "AMP-Designer",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E13",
+      "hypothesis": "AMPGen",
+      "old_reason": "MSA・3B scorer統合費用＋独立gate",
+      "minimum_comparison": "MSAから生成まで32件smoke、生成部と全下流選抜を分離して1k×2",
+      "crosswalk": "R7;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "AMPGen",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E14",
+      "hypothesis": "deepAMP",
+      "old_reason": "未知training overlapを独立oracle条件にした",
+      "minimum_comparison": "公開weights/利用条件/出力意味を確認して最小推論、生成・fitnessを比較",
+      "crosswalk": "R0;R7;D002",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "deepAMP",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E15",
+      "hypothesis": "ProDCARL / EvoDiff小型RL",
+      "old_reason": "aligned weightsなし・未検証reward・license未確認",
+      "minimum_comparison": "公開資産再確認。実行可能ならSFT→短いRLとSFTのみ比較。不可なら利用可能なEvoDiffで独自の小型reward実験",
+      "crosswalk": "R7;D011;D012",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "ProDCARL / EvoDiff小型RL",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E16",
+      "hypothesis": "構造・膜関連診断",
+      "old_reason": "構造proxyをMIC代替にできない",
+      "minimum_comparison": "公開手順の再現可能性を確認し、差の大きいTop候補最大20件で構造／短い膜診断のpilot",
+      "crosswalk": "R7;D001;D002",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "構造・膜関連診断",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    },
+    {
+      "id": "E17",
+      "hypothesis": "複数予測器の不一致・候補portfolio",
+      "old_reason": "不確実性根拠不足で未採用",
+      "minimum_comparison": "consensus、菌群別specialist、予測器間で異なる候補を一定比率で組合せ",
+      "crosswalk": "R2;R3;D009;D013",
+      "tier": "Minimum/Full separate asset readiness",
+      "assets": "複数予測器の不一致・候補portfolio",
+      "status": "registered",
+      "cost_seconds": 0,
+      "output": "",
+      "next_action": "screen in assigned phase"
+    }
+  ]
+}

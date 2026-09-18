@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-09-11",
+  "sources": [
+    {
+      "path": "41564_2025_2061_MOESM12_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM12_ESM.xlsx",
+      "revision": "doi:10.1038/s41564-025-02061-0",
+      "sha256": "489d5baf69b69e92e0c603965faa5ee4f3e3a5e31996506e95c734c5e3b22c56"
+    },
+    {
+      "path": "41564_2025_2061_MOESM13_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM13_ESM.xlsx",
+      "revision": "doi:10.1038/s41564-025-02061-0",
+      "sha256": "bad6610c77b087d933b9bd7bfbaf0dc366494a5e4f87c309aedc08a68703e103"
+    },
+    {
+      "path": "41564_2025_2061_MOESM14_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM14_ESM.xlsx",
+      "revision": "doi:10.1038/s41564-025-02061-0",
+      "sha256": "3ec4f326d48a36ef22ac9c2472d83d9c427d6ff278dcef791294e0d18c788fe1"
+    },
+    {
+      "path": "41564_2025_2061_MOESM1_ESM.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM1_ESM.pdf",
+      "revision": "doi:10.1038/s41564-025-02061-0",
+      "sha256": "635f36cf4a0a79d77d32cd63f93f49237bd0d3b967cf1e1234eaffff07c49919"
+    },
+    {
+      "path": "41564_2025_2061_MOESM8_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM8_ESM.xlsx",
+      "revision": "doi:10.1038/s41564-025-02061-0",
+      "sha256": "2a397fcec1120cf8aea257ec50febbbed53f14417d0ee7bdb4137bf78cdb9c1b"
+    },
+    {
+      "path": "COA_archaeasins.zip",
+      "url": "https://data.mendeley.com/public-files/datasets/d8yzgtdrcp/files/b1307377-6e4d-4f63-b2c1-da070f075949/file_downloaded",
+      "revision": "doi:10.17632/d8yzgtdrcp.3",
+      "sha256": "982cd9a9f6d497c14c67a1b72ea25106cc865743ae63f2e1275d73bad37ef0b3"
+    },
+    {
+      "path": "archaeasin_s2.csv",
+      "url": "https://data.mendeley.com/public-files/datasets/d8yzgtdrcp/files/338caca5-e8ed-438a-ae96-2d9215753e40/file_downloaded",
+      "revision": "doi:10.17632/d8yzgtdrcp.3",
+      "sha256": "51ad7cc136604d56632bad87f3d2efae5adfcaa7513d922575c62d1b92953c7a"
+    }
+  ]
+}
