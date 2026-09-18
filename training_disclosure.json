@@ -113,7 +113,7 @@
   "data_owner": "DATA_SOURCES.md",
   "runtime_labels_required": false,
   "original_paper_new_training_observations": 0,
-  "APEX_training_disclosure": "partly unresolved checkpoint-linked full training list; not certified Full-ready",
+  "APEX_training_disclosure": "Official supplied pretrained model; source revision, exact weights, MIT notice and published training description disclosed. Complete checkpoint-linked training list and overlap remain unestablished; no additional organizer-permission gate imposed. Final eligibility is assessed by organizers.",
   "generator_training": "official AMP-Diffusion starter kit checkpoint; reference sequences in data/training/training.fasta; exact public provenance in DATA_SOURCES.md",
   "pretrained_representation": "FAIR ESM2 UR50/D; MIT notice licenses/fair-esm-MIT.txt",
   "redistribution": "identifiers/provenance supplied here; public source references are not blanket archive redistribution authorization",

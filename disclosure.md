@@ -15,8 +15,9 @@ The generated sequences follow the challenge's linear/free-terminal contract, bu
 predicted activity cannot be certified for that chemistry from unresolved training records.
 
 The supplied APEX weights have recorded public MIT provenance; their complete checkpoint-linked
-training list and overlap remain unresolved. This is a Full training-disclosure question, not a
-finding of unauthorized use. No independent external MIC validation or successful nested joint
+training list and overlap remain unresolved. These limits are disclosed alongside the official
+starter provenance; no additional permission request is required merely to use the supplied
+model as intended. This does not claim complete overlap knowledge or organizer adjudication. No independent external MIC validation or successful nested joint
 MIC/HC50 validation is claimed. The reviewed joint cohort has only four molecules, eight endpoint
 pairs and one paper/homology component. HC50 proxies and all generated sequences lack new
 experimental validation. In the registered comparison, the adopted policy worsens APEX activity,

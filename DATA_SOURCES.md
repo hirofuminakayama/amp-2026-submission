@@ -16,7 +16,8 @@ Dataset/weight provenance and code licenses are separate from Full eligibility.
 
 The APEX paper links study supplementary data, which we have not established as a full training
 release for these weights: https://www.nature.com/articles/s41564-025-02061-0 and
-https://data.mendeley.com/datasets/d8yzgtdrcp/3. Organizer clarification is pending.
+https://data.mendeley.com/datasets/d8yzgtdrcp/3. The known information and remaining limits are disclosed. Use of the official supplied model
+does not require a new permission request in this workflow; final eligibility is not self-certified.
 
 Public training/development/evaluation reuse and unresolved chemical forms are disclosed in
 disclosure.md. QMAP targets were used in development, not as independent raw-MIC holdout labels.

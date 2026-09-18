@@ -53,7 +53,9 @@ See [abstract](abstract.md), [disclosure](disclosure.md), [data sources](DATA_SO
 [training disclosure](training_disclosure.json), and [third-party notices](THIRD_PARTY_LICENSES.md).
 The five MIC bundles share 5,036 exact public observations. Public partitions were reused for
 development; no independent holdout or complete chemistry annotation is claimed.
-APEX checkpoint-specific training disclosure requires organizer clarification before Full submission.
+The supplied APEX model is used under the official starter provenance and retained MIT notice.
+Known training information and unresolved overlap are disclosed; a fresh organizer permission
+request is not a prerequisite. Final eligibility is determined by the organizers.
 
 Root code and our five predictor bundles are MIT licensed. Upstream notices and dataset terms
 remain applicable. Additional raw training tables and research outputs are not redistributed.
